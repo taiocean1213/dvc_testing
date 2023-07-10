@@ -68,7 +68,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Learn the digits on the train subset
-clf.fit(X_train[10:], y_train[10:])
+clf.fit(X_train, y_train)
 
 # Predict the value of the digit on the test subset
 predicted = clf.predict(X_test)
